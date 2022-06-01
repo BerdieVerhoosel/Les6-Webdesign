@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tandartsafspraak</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <section>
+        <h1>Tandartsafspraak</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptatibus fugiat cupiditate! Tenetur officia sed assumenda aperiam, non porro veniam totam qui, corrupti numquam dolore, dolorum earum asperiores sunt ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quae reprehenderit facere fugiat ipsum! Autem tempore consequatur debitis ipsa cupiditate, cum repudiandae illo facere, animi eaque corporis officiis tenetur in.</p>
+        <br>
+        <figure>
+            <img src="model.jpg" alt="dentist shows xrays"> 
+            <img src="borstel.jpg" alt="wooden toothbrushes"> 
+            <img src="bitje.jpg" alt="girl with mouthguard">
+        </figure>
+    </section>
+    <br>
+    <br>
+    <main style="background-color: lightgrey">
+        <p style="font-weight: bold; font-size: larger;">Vul de volgende gegevens in</p>
+        <p>De assistente belt u dan zo spoedig mogelijk op voor het maken van een afspraak</p>
+        <form id= "afspraakformulier" action="https://formspree.io/f/xjvllzlz" method="post">
+            <fieldset style="background-color: lightblue;">
+            <legend style="font-weight: bold;">Persoonlijke gegevens</legend>
+                    <label for="naam">Naam</label>
+                    <input id="naam" type="text" name="naam">
+                    <label for="adres"> Adres </label>
+                    <input id="adres" type="text" name="adres">
+                    <label for="telefoonnummer"> Telefoonnummer </label>
+                    <input id="telefoonnummer" type="tel" name="telefoonnummer">
+                    <label for="email">E-mail adres</label>
+                    <input id="email" type="email" name="email">
+            </fieldset>
+            <br>
+            <fieldset style="background-color: lightblue;">
+            <legend style="font-weight: bold;">Beschrijving van de klachten</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="gevoelige tanden">Gevoelige tanden</label>
+                                <input id="gevoelige tanden" type="checkbox" name="gevoelige tanden" value="ja">
+                                <label for="gevoelig tandvlees">Gevoelig tandvlees</label>
+                                <input id="gevoelig tandvlees" type="checkbox" name="gevoelig tandvlees" value="ja">
+                                <label for="gaatjes">Gaatjes</label>
+                                <input id="gaatjes" type="checkbox" name="gaatjes" value="ja">
+                                <label for="verkleuringen">Verkleuringen</label>
+                                <input id="verkleuringen" type="checkbox" name="verkleuringen" value="ja">
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td style="color: lightblue;"> 0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="foto uploaden">Upload hier een foto van uw klachten</label>
+                                <input id="foto uploaden" type="file" name="foto uploaden">
+                            </td>
+                        </tr>
+                    </table>
+            </fieldset>
+            <br>
+            <fieldset style="background-color: lightblue;">
+            <legend style="font-weight: bold;">Toelichting van de klachten</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="omschrijving klachten"></label>
+                            <textarea id="omschrijving klachten" name="omschrijving klachten" rows="10" cols="50" maxlength="500">Omschrijf hier uitgebreider uw klachten</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="datum kiezen">Datum sinds u klachten ervaart</label>
+                            <input id="datum kiezen" type="date" name="datum kiezen"> 
+                        </td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+            <br>
+            <input type="submit" value="Verzenden">
+            <br>
+            <p style="color: lightgrey;">0</p>
+        </form>
+        
+    </main>
+
+</body>
+</html>
